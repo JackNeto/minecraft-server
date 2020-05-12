@@ -8,13 +8,13 @@ services:
     container_name: minecraft-worlds
     environment:
       EULA: "true"
-      GAMEMODE: creative
+      GAMEMODE: survival
       DIFFICULTY: easy
       SERVER_NAME: "Jack's server - worlds"
-      WHITE_LIST: "false"
+      WHITE_LIST: "true"
       MEMORY: "2G"
       PVP: "false"
-      LEVEL_NAME: "UpperEastSide.mcworld"
+      # LEVEL_NAME: "UpperEastSide.mcworld"
     ports:
       - 19132:19132/udp
       - 19132:19132
