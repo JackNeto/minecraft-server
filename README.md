@@ -29,11 +29,12 @@ whitelist list
 whitelist add <usename>
 
 // Give things to users
-// give <usename> emptymap
+give <usename> emptymap
 
 
+// Misc
 kill <usename>
-gamemode creative <usename> // switch user to creative mode (good for cleaning up after your kis make a mess)
+gamemode creative <usename> // switch user to creative mode (good for cleaning up after your kids make a mess)
 gamerule showcoordinates true // show coordinates
 setworldspawn -60 63 55 // set respaws coordinates
 
