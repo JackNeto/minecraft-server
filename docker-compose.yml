@@ -1,0 +1,28 @@
+version: '3.4'
+
+services:
+  minecraft-worlds:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: minecraft-worlds
+    environment:
+      EULA: "true"
+      GAMEMODE: creative
+      DIFFICULTY: easy
+      SERVER_NAME: "Jack's server - worlds"
+      WHITE_LIST: "false"
+      MEMORY: "2G"
+      PVP: "false"
+      LEVEL_NAME: "UpperEastSide.mcworld"
+    ports:
+      - 19132:19132/udp
+      - 19132:19132
+    volumes:
+      - data:/data
+    stdin_open: true
+    tty: true
+
+
+volumes:
+  data: {}
